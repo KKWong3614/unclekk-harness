@@ -1,0 +1,19 @@
+{
+  "name": "unclekk-harness",
+  "version": "1.0.5",
+  "description": "Orchestrates tasks into auditable, resumable 6-stage pipelines",
+  "license": "MIT",
+  "keywords": [
+    "skill",
+    "orchestrator",
+    "pipeline",
+    "audit",
+    "harness"
+  ],
+  "scripts": {
+    "test": "python scripts/test_harness.py -v"
+  },
+  "engines": {
+    "python": ">=3.8"
+  }
+}
