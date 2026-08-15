@@ -1,20 +1,25 @@
-# UncleKK Harness 端到端流水线编排
+# UncleKK Harness 端到端流水线编排 · End-to-End Pipeline Orchestration
 
 > 把规划/执行/审计串成可审计、可恢复、可暂停的 6 阶段端到端流水线（INGEST→PLAN→EXEC→REVIEW→AUDIT→SETTLE）。
+>
+> Chains planning / execution / auditing into an auditable, resumable, pausable 6-stage end-to-end pipeline (INGEST→PLAN→EXEC→REVIEW→AUDIT→SETTLE).
 
+将任务编排为可审计、可恢复的流水线。
 Orchestrates tasks into auditable, resumable pipelines.
 
-## 安装
+## 安装 Installation
 
 将此技能克隆到你的 WorkBuddy 技能目录：
+Clone this skill into your WorkBuddy skills directory:
 
 ```bash
 git clone https://github.com/KKWong3614/unclekk-harness.git "$HOME/.workbuddy/skills/unclekk-harness"
 ```
 
 或下载 Release 中的 zip，解压到技能目录即可。
+Or download the zip from the Release and extract it into your skills directory.
 
-## 目录结构
+## 目录结构 Directory Structure
 
 ```
 unclekk-harness/
@@ -26,10 +31,11 @@ unclekk-harness/
 └── templates/    # 模板（如有）
 ```
 
-## 版本
+## 版本 Version
 
 当前版本：`1.0.5`
+Current version: `1.0.5`
 
-## 许可证
+## 许可证 License
 
 [MIT](LICENSE) © 2026 KK大叔 (UncleKK)
