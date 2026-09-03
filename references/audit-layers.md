@@ -33,7 +33,7 @@ P0 命中任意一条 → 结论 FAIL，跳过后续 L1-L5。
 - 所有阶段名称与 stage_* 函数名一致
 - 所有 Python 示例代码语法正确、能实际运行
 - SKILL.md 版本号与 frontmatter version 一致
-- evolution-log.md 所有版本有 results.tsv 条目
+- evolution-log.md 所有版本有 results.md 条目
 - SKILL.md JSON schema 与 harness.py 实际输出一致
 
 ## L2 — 序数评分（0-3 级制）
@@ -62,7 +62,7 @@ P0 命中任意一条 → 结论 FAIL，跳过后续 L1-L5。
 
 - 对比当前版本与初版的核心差异
 - 检查功能退化（旧功能不可用）
-- 检查 results.tsv 分数趋势（棘轮是否成立：新分 >= 旧分）
+- 检查 results.md 分数趋势（棘轮是否成立：新分 >= 旧分）
 
 ## 输出要求
 
@@ -118,9 +118,9 @@ P0 必须全部修复后进入 P1。每修一条，重跑全量回归确认不�
 
 ### 第 5 步：更新变更文件
 
-- CHANGELOG.md（若不存在则新建）+ evolution-log.md + results.tsv
+- CHANGELOG.md（若不存在则新建）+ evolution-log.md + results.md
 - 版本号递增，变更描述精确到"修了什么 bug"
-- results.tsv 每行必须对应真实 old→new 分数变动，无对应行即虚构断言
+- results.md 每行必须对应真实 old→new 分数变动，无对应行即虚构断言
 
 ### 第 6 步：最终收口
 
