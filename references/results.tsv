@@ -1,9 +1,0 @@
-timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
-2026-07-26T22:50:00+0800	v1.0.0	unclekk-harness	-	74.0	baseline	all	"初版 9 维评估：dim3=7 dim8=7 dim9=6 最弱"	full
-2026-07-26T22:50:00+0800	v1.0.1	unclekk-harness	74.0	92.0	applied	dim2,dim3,dim5,dim9	"3 策略并行：失败模式四列表+反例黑名单+否定性章节+AST allowlist+state 恢复+audit 填充指导；独立审计 7/9→修复→PASS"	full
-2026-07-26T21:56:06+0800	v1.0.1-audit-baseline	unclekk-harness	-	41.14	baseline	all	"独立第三方重审基线（独立归一；dim8=7因测试覆盖浅：无multi-DAG/parallel/condition-safety）"	full
-2026-07-27T06:00:00+0800	v1.0.2-audit	unclekk-harness	41.14	44.86	applied	dim5,dim6,dim8	"4 策略变体(A+B+C+D)→合并 A+C+D+B要点；+10测试；修condition沙箱属性链逃逸；删library.py死引用；9规则审计 9/9 PASS"	full
-2026-07-27T06:02:00+0800	v1.0.3-audit	unclekk-harness	42.91	48.20	applied	dim5,dim6,dim8	"独立第三方第2轮；4策略(A+B+C并行+D串行)→合并 A+B+D；workspace可写性验证+abspath归一；修##文件结构重复标题；executor_prompt workspace约束对齐；+2测试(缺失subtasks恢复+CLI错误路径)；9规则审计 9/9 PASS"	full
-2026-07-27T06:05:00+0800	v1.0.4-audit	unclekk-harness	48.09	48.72	applied	dim4,dim5,dim7,dim8	"独立第三方第3轮(触顶确认轮)；stage-gate前置检查(review/exec→settle/review-audit)+--final-output非空阻断；+4测试(33/33)；失败模式表#10；独立9规则审计 9/9；真实Δ=+0.63(<2)"	full
-2026-07-27T22:02:00+0800	v1.0.4-remediation	unclekk-harness	48.72	48.72	applied	dim8	"独立第三方第4轮(触顶确认后修复)；_load(recover=True)死代码→激活--recover CLI；stage_exec JSONDecodeError/ValueError→_recover_state_from_log；+4测试(37/37)；触顶confirmed(连续2轮Δ<2)"	full
-2026-07-30T09:40:00+0800	v1.0.5	unclekk-harness	48.72	48.72	applied	dim5,dim7	"独立第三方第4轮(主Hermes抽验)；P0-1 skeleton placeholder阻断(validate拦截[LLM:])+P0-2文档33→39测试数修正+P1-2 stage枚举补充init/recovered；+2测试(39/39)；文档/代码不符闭环"	full
