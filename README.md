@@ -1,6 +1,6 @@
-# UncleKK Harness 端到端流水线编排 · End-to-End Pipeline Orchestration
+# UncleKK Harness 大幅减少AI幻觉 · Drastically Reduces AI Hallucination
 
-> 把规划/执行/审计串成可审计、可恢复、可暂停的 6 阶段端到端流水线（INGEST→PLAN→EXEC→REVIEW→AUDIT→SETTLE）。
+> 把规划/执行/审计串成可审计、可恢复、可暂停的 6 阶段端到端流水线（INGEST→PLAN→EXEC→REVIEW→AUDIT→SETTLE），通过声明证据链与三阶段对抗审计大幅减少 AI 幻觉。
 >
 > Chains planning / execution / auditing into an auditable, resumable, pausable 6-stage end-to-end pipeline (INGEST→PLAN→EXEC→REVIEW→AUDIT→SETTLE).
 
@@ -33,8 +33,8 @@ unclekk-harness/
 
 ## 版本 Version
 
-当前版本：`1.0.5`
-Current version: `1.0.5`
+当前版本：`1.0.7`
+Current version: `1.0.7`
 
 ## 许可证 License
 
