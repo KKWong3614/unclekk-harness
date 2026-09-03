@@ -1,6 +1,6 @@
 {
   "name": "unclekk-harness",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Orchestrates tasks into auditable, resumable 6-stage pipelines",
   "license": "MIT",
   "keywords": [
