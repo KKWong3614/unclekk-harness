@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.0.7 — 2026-08-28
+依据 SkillHub 测评报告（T5.0 / R4.5 / A4.5 / C4.5 / E4.5）与安全审计发现做的优化：
+- 修复版本号不一致：package.json(1.0.5) / _meta(1.0.6) / SKILL.md(1.0.6) / README(1.0.5) 统一至 1.0.7
+- 补齐此前文档声称但包内缺失的 `unclekk-skill-library/` 子包（真实可用的 library.py + 测试 + 文档，Voyager 式 record/optimize 棘轮，纯 stdlib 原子写）
+- 新增 `references/results.md`（harness 自身 9 维评分棘轮账本，含基线行；平台不支持 .tsv 故用 .md）
+- 新增 `references/end-to-end-example.md`（从 ingest 到 settle 的完整可复制案例）
+- 新增 `references/faq.md`（高频问答集中汇总）
+- SKILL.md 增补「使用边界量化约束」「Python 嵌入用法」「错误码速查」三节，回应测评 A/边界、A/触发、R/异常处理的短板
+- displayName 改为「UncleKK Harness 大幅减少AI幻觉」
+- 无代码安全面变化（harness.py 未改动，39 项回归测试保持绿色）
+
+## v1.0.6 — 2026-08-27（SkillHub 发布基线，本机安装版本，无本地内容变更）
+
 ## v1.0.5 — 2026-07-30
 独立审计长第 4 轮（NEEDS_REVISION → 主 Hermes 抽验修复）
 - P0-1: validate 拦截 `[LLM:` placeholder，INGEST→PLAN skeleton 现在报错而非放行（修复文档与代码语义裂缝）
